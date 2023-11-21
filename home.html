@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 id="titulo"></h3>
+        <h3 id="usuario"></h3>
+        <h3 id="cpf"></h3>
+        <button onclick="voltarLogin()">Voltar</button>
+        <button onclick="tabela()">Ir para Tabela</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        let usuario = JSON.parse(localStorage.getItem("logado"));
+        document.getElementById("titulo").innerHTML = "Bem-vindo, <span>" + usuario.nome + "</span>";
+        document.getElementById("usuario").innerHTML = "Seu usuário: <span>" + usuario.login + "</span>";
+        document.getElementById("cpf").innerHTML = "Seu CPF: <span>" + usuario.cpf + "</span>";
+
+        function voltarLogin() {
+            window.location.href = "index.html";
+        }
+        function tabela() {
+            window.location.href = "tabela.html";
+        }
+    </script>
+</body>
+
+</html>

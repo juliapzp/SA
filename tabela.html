@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styletabela.css">
+    <title>Notas dos alunos</title>
+</head>
+
+<body id="corpo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="text-align: center">
+                    <img id="logo" class="logo" alt="logo"
+                        src="https://cursos.sesisenai.org.br/images/logos/sesi-senai.webp" />
+                </div>
+                <h3 class="text-center">
+                    Escola SESI
+                </h3>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>
+                                Matrícula
+                            </th>
+                            <th>
+                                Estudante
+                            </th>
+                            <th>
+                                comportamento
+                            </th>
+                            <th>
+                                Conhecimento
+                            </th>
+                            <th>
+                                Presença
+                            </th>
+                            <th>
+                                Qualidade das entregas
+                            </th>
+                            <th>
+                                Sobre
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="alunos"></tbody>
+                </table>
+                <dl>
+                    Selecione um Estudante desejado para obter mais informações
+                </dl>
+
+                <!-- Botão Novo Cliente -->
+                <div class="text-center">
+                    <button class="btn btn-primary" id="btnNovoCliente">Avaliação dos alunos</button>
+                </div>
+
+                <!-- Modal Novo Cliente -->
+                <div id="modalNovoCliente" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Cadastrar Novo Cliente</h2>
+                        </div>
+                        <div class="modal-body">
+                            <form id="formNovoCliente">
+                                <label for="Matrícula">Matrícula:</label>
+                                <input type="text" id="Matrícula" required>
+
+                                <label for="Estudante">Estudante:</label>
+                                <input type="text" id="Estudante" required>
+
+                                <label for="comportamento">comportamento:</label>
+                                <select id="comportamento" required>
+                                    <option value="Ruim">Ruim</option>
+                                    <option value="Médio">Médio</option>
+                                    <option value="Bom">Bom</option>
+                                </select>
+
+                                <label for="conhecimento">Conhecimento:</label>
+                                <select id="conhecimento" required>
+                                    <option value="Ruim">Ruim</option>
+                                    <option value="Médio">Médio</option>
+                                    <option value="Bom">Bom</option>
+                                </select>
+
+                                <label for="Presença">Presença:</label>
+                                <select id="Presença" required>
+                                    <option value="Ruim">Ruim</option>
+                                    <option value="Médio">Médio</option>
+                                    <option value="Bom">Bom</option>
+                                </select>
+
+                                <label for="Qualidade das entregas">Qualidade das entregas:</label>
+                                <select id="Qualidade das entregas" required>
+                                    <option value="Ruim">Ruim</option>
+                                    <option value="Médio">Médio</option>
+                                    <option value="Bom">Bom</option>
+                                </select>
+
+                                <button type="button" onclick="cadastrarCliente()">Lançar notas</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal de Informações do Cliente -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Informações do Cliente</h2>
+                        <p>Matrícula: <span id="MatriculaModal"></span></p>
+                        <p>Estudante: <span id="EstudanteModal"></span></p>
+                        <p>comportamento: <span id="comportamentoModal"></span></p>
+                        <p>Conhecimento: <span id="conhecimentoModal"></span></p>
+                        <p>Presença: <span id="PresencaModal"></span></p>
+                        <p>Qualidade das entregas: <span id="QualidadeDasEntregasModal"></span></p>
+                        <button id="btnExcluirAluno">Excluir Aluno</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripttabela.js"></script>
+</body>
+
+</html>
