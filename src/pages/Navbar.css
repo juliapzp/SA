@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
+  color: white;
+  height: 100px;
+  align-items: center;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-buttons button{
+  height: 50px;
+}
+
+.botao-entrar {
+  color: #ffffff;
+  background: transparent;
+  border: solid 1px #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.logo{
+  margin-left: 10px;
+}
+
+.botao-cadastrar {
+  color: #5e0000;
+  background: #ffffff;
+  border: solid 1px #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.logo img{
+  width: 100px;
+}

@@ -1,0 +1,9 @@
+.tela-home {
+    background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
+    align-items: center;
+}
+
+.bem-vindo {
+    display: flex;
+    color: #ffff;
+}
