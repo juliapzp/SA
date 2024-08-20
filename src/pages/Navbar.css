@@ -1,8 +1,9 @@
 .navbar {
+  background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
+  background: linear-gradient(to right, #8f2955, #e42b41, #d34e3a);
   color: white;
   height: 100px;
   align-items: center;
@@ -13,7 +14,7 @@
   flex-direction: row;
 }
 
-.nav-buttons button{
+.nav-buttons button {
   height: 50px;
 }
 
@@ -21,32 +22,42 @@
   color: #ffffff;
   background: transparent;
   border: solid 1px #ffffff;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 15px;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   width: 100px;
-  margin-right: 10px;
+  margin-right: 20px;
+  
 }
 
-.logo{
-  margin-left: 10px;
+.botao-entrar:hover {
+  background-color: #ffffff60;
+  color: #fff;
+  transition: 0.5s;
 }
 
 .botao-cadastrar {
   color: #5e0000;
   background: #ffffff;
   border: solid 1px #ffffff;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 15px;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   width: 100px;
   margin-right: 20px;
 }
 
-.logo img{
+.botao-cadastrar:hover {
+  background-color: #ffffffe3;
+  color: #5e0000;
+  transition: 0.5s;
+}
+
+.logo img {
   width: 100px;
+  margin-left: 30px;
 }
