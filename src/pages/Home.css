@@ -1,9 +1,8 @@
 .tela-home {
-    background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
-    align-items: center;
+background-color: #ffff;
 }
-
 .bem-vindo {
+    background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
     display: block;
     color: #ffff;
     justify-content: center;
@@ -15,5 +14,8 @@
 
 .bem-vindo img {
     width: 360px;
-    
+}
+
+.abaixo {
+    height: 100vh;
 }

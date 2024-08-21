@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import './Home.css';
+import './Login.css';
 import logo from '../assets/logo1.png';
 import img1 from '../assets/img1.png';
 import {Link} from 'react-router-dom';
@@ -13,9 +13,9 @@ function IrParaCadastro() {
   window.location.href = '/Cadastro';
 }
 
-const Home = () => {
+const Login = () => {
   return (
-    <div className="tela-home">
+    <div className="tela-login">
       <div className="navbar">
         <div className="logo">
           <img src={logo} alt="Logo" />
@@ -25,16 +25,21 @@ const Home = () => {
           <button onClick={IrParaCadastro} className="botao-cadastrar">Cadastrar</button>
         </div>
       </div>
-      <div className='bem-vindo'>
-        <h1>Bem-vindo(a) ao Suporte da ACSIV</h1>
-        <img src={img1} alt="Img1" />
-      </div>
-      <div className='abaixo'>
-        <h1>Teste</h1>
+      <div className='escolha-login'>
+        <h1 className='gradient'>Escolha seu Perfil:</h1>
+        <div className='cliente'>
+        <h1 className='gradient'>Cliente</h1>
+        <button  className="botao-escolha">Entrar Cliente</button>
+        </div>
+
+        <div className='admnistrador'>
+        <h1 className='gradient'>Administrador</h1>
+        <button  className="botao-escolha">Entrar Administrador</button>
+        </div>
       </div>
 
     </div>
   );
 };
 
-export default Home;
+export default Login;

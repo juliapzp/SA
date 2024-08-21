@@ -2,16 +2,10 @@
   background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   background: linear-gradient(to right, #8f2955, #e42b41, #d34e3a);
   color: white;
   height: 100px;
   align-items: center;
-}
-
-.nav-buttons {
-  display: flex;
-  flex-direction: row;
 }
 
 .nav-buttons button {
@@ -29,7 +23,6 @@
   cursor: pointer;
   width: 100px;
   margin-right: 20px;
-  
 }
 
 .botao-entrar:hover {
