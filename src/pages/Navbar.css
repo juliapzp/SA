@@ -6,6 +6,7 @@
   color: white;
   height: 100px;
   align-items: center;
+  margin: 0;
 }
 
 .nav-buttons button {

@@ -2,8 +2,8 @@ import React from 'react';
 import './Navbar.css';
 import './Login.css';
 import logo from '../assets/logo1.png';
-import img1 from '../assets/img1.png';
-import {Link} from 'react-router-dom';
+import profile from '../assets/profile.png';
+import { Link } from 'react-router-dom';
 
 function IrParaLogin() {
   window.location.href = '/Login';
@@ -27,15 +27,21 @@ const Login = () => {
       </div>
       <div className='escolha-login'>
         <h1 className='gradient'>Escolha seu Perfil:</h1>
-        <div className='cliente'>
-        <h1 className='gradient'>Cliente</h1>
-        <button  className="botao-escolha">Entrar Cliente</button>
+        <div className='divs-escolha'>
+          <div className='cliente'>
+            <img className='profile' src={profile} alt="Profile" />
+            <h1 className='gradient'>Cliente</h1>
+            <button className="botao-escolha">Entrar Cliente</button>
+          </div>
+
+          <div className='administrador'>
+            <img className='profile' src={profile} alt="Profile" />
+            <h1 className='gradient'>Administrador</h1>
+            <button className="botao-escolha">Entrar Administrador</button>
+          </div>
         </div>
 
-        <div className='admnistrador'>
-        <h1 className='gradient'>Administrador</h1>
-        <button  className="botao-escolha">Entrar Administrador</button>
-        </div>
+
       </div>
 
     </div>
