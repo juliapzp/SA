@@ -13,12 +13,20 @@ function IrParaCadastro() {
   window.location.href = '/Cadastro';
 }
 
+function IrParaCadastroCliente() {
+  window.location.href = '/LoginCliente';
+}
+
+function IrParaCadastroAdmin() {
+  window.location.href = '/LoginAdmin';
+}
+
 const Cadastro = () => {
   return (
     <div className="tela-logincadastro">
       <div className="navbar">
         <div className="logo">
-        <a href="/Home">
+        <a href="/">
         <img  src={logo} alt="logo" />
         </a>
         </div>
@@ -33,13 +41,13 @@ const Cadastro = () => {
           <div className='cliente'>
             <img className='profile' src={profile} alt="Profile" />
             <h1 className='gradient'>Cliente</h1>
-            <button className="botao-escolha">Cadastrar</button>
+            <button onClick={IrParaCadastroCliente} className="botao-escolha">Cadastrar</button>
           </div>
 
           <div className='administrador'>
             <img className='profile' src={profile} alt="Profile" />
             <h1 className='gradient'>Administrador</h1>
-            <button className="botao-escolha">Cadastrar</button>
+            <button onClick={IrParaCadastroAdmin} className="botao-escolha">Cadastrar</button>
           </div>
         </div>
 
