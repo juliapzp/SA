@@ -1,0 +1,63 @@
+.navbar {
+  background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #8f2955, #e42b41, #d34e3a);
+  color: white;
+  height: 100px;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-buttons button {
+  height: 50px;
+}
+
+.botao-entrar {
+  color: #ffffff;
+  background: transparent;
+  border: solid 1px #ffffff;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.botao-entrar:hover {
+  background-color: #ffffff46;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.botao-cadastrar {
+  color: #5e0000;
+  background: #ffffff;
+  border: solid 1px #ffffff;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.botao-cadastrar:hover {
+  transition: 0,5s;
+}
+
+.logo img {
+  width: 100px;
+  margin-left: 30px;
+}
+
+.gradient {
+  background-image: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
