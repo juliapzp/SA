@@ -1,8 +1,8 @@
 import React from 'react';
-import './Navbar.css';
-import './LoginCadastro.css';
-import logo from '../assets/logo1.png';
-import profile from '../assets/profile.png';
+import '../css/Navbar.css';
+import '../css/LoginCadastro.css';
+import logo from '../../assets/logo1.png';
+import profile from '../../assets/profile.png';
 import { Link } from 'react-router-dom';
 
 function IrParaLogin() {

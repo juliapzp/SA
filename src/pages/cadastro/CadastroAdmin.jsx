@@ -1,7 +1,7 @@
 import React from 'react';
-import './Navbar.css';
-import './Cadastro.css';
-import logo from '../assets/logo1.png';
+import '../css/Navbar.css';
+import '../css/Cadastro.css';
+import logo from '../../assets/logo1.png';
 import { Link } from 'react-router-dom';
 
 

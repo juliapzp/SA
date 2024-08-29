@@ -1,7 +1,7 @@
 import React from 'react';
-import './Navbar.css';
-import './Login.css';
-import logo from '../assets/logo1.png';
+import '../css/Navbar.css';
+import '../css/Cadastro.css';
+import logo from '../../assets/logo1.png';
 import { Link } from 'react-router-dom';
 
 
@@ -14,9 +14,9 @@ function IrParaCadastro() {
 }
 
 
-const LoginAdmin = () => {
+const CadastroCliente = () => {
     return (
-        <div className="tela-loginadmin">
+        <div className="tela-cadastrocliente">
             <div className="navbar">
                 <div className="logo">
                     <a href="/">
@@ -32,4 +32,4 @@ const LoginAdmin = () => {
     );
 };
 
-export default LoginAdmin;
+export default CadastroCliente;
