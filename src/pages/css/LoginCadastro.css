@@ -40,8 +40,8 @@
     width: 370px;
     height: 330px;
     border-radius: 30px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border: solid 0.5px #b4b4b4;
+    box-shadow: rgba(107, 107, 107, 0.2) 0px 7px 29px 0px;
+    border: 1px solid #ccc;
   }
 
   .divs-escolha {

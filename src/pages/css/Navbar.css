@@ -1,8 +1,8 @@
 .navbar {
   background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(to right, #8f2955, #e42b41, #d34e3a);
   color: white;
   height: 100px;
   align-items: center;
@@ -57,6 +57,7 @@
 .gradient {
   background-image: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
   background-clip: text;
+  background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 30px;

@@ -1,24 +1,36 @@
 body {
     margin: 0;
     background: linear-gradient(to right, #8F2955, #E42B41, #D34E3A);
+    background-repeat: no-repeat;
+}
+
+.abaixo h1 {
+    font-weight: bold;
 }
 
 .bem-vindo {
+    margin-top: 80px;
     display: block;
     color: #ffff;
     justify-content: center;
     align-items: center;
-    height: 75vh;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.bem-vindo h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .bem-vindo img {
+    margin-top: 40px;
     width: 360px;
+    margin-bottom: 100px;
 }
 
 .abaixo {
-    background-color: #ffff;
+    background-color: #F1F4F5;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -36,10 +48,90 @@ body {
     width: 250px;
     height: 100px;
     margin-top: 100px;
-    margin-bottom: 50px;
-    transition: background-color 0.5s; 
+    margin-bottom: 100px;
+    transition: background-color 0.5s;
 }
 
 .botao-duvida:hover {
     background-color: #e42b4123;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input[type="search"] {
+    padding: 10px;
+    font-size: 16px;
+    border: solid 0.5px #b4b4b4;
+    border-radius: 15px;
+    box-shadow: rgba(107, 107, 107, 0.2) 0px 7px 29px 0px;
+    padding-right: 300px;
+}
+
+.search-container input[type="search"]:focus {
+    box-shadow: rgba(105, 105, 105, 0.404) 0px 7px 29px 0px;
+    outline: none;
+}
+
+.search-container input[type="search"]::placeholder {
+    color: #999;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #E42B41;
+}
+
+.div-filtros {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    background-color: #ffffff;
+    width: 570px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: rgba(107, 107, 107, 0.2) 0px 7px 29px 0px;
+    border: solid 0.5px #b4b4b4;
+}
+
+.div-filtro-barra {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.duvida {
+    background-color: #ffffff;
+    width: 450px;
+    border-radius: 30px;
+    box-shadow: rgba(107, 107, 107, 0.2) 0px 7px 29px 0px;
+    border: 1px solid #ccc;
+}
+
+.duvida h2 {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.duvida p {
+    margin: 50px;
+}
+
+
+.duvidas {
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    display: flex;
+    margin-top: 70px;
 }
