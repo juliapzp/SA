@@ -135,3 +135,66 @@ body {
     display: flex;
     margin-top: 70px;
 }
+
+.status {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.status-respondido {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.status-respondido h3 {
+    color: #189524;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.mostrar-resposta h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.feliz {
+    height: 35px;
+    color: #189524;
+    margin-bottom: 10px;
+}
+
+.seta-baixo {
+    height: 25px;
+}
+
+.mostrar-resposta {
+    display: flex;
+    margin-right: 20px;
+}
+
+.triste {
+    height: 35px;
+    color: #FC0000;
+    margin-bottom: 10px;
+}
+
+.status-nao-respondido {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    height: 50px;
+}
+
+.status-nao-respondido h3 {
+    color: #FC0000;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+}

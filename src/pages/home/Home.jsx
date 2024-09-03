@@ -4,7 +4,7 @@ import logo from '../../assets/logo1.png';
 import img1 from '../../assets/img1.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faFaceSmile, faFaceSadTear, faCircleArrowDown } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -91,11 +91,27 @@ function Home() {
           <div className='duvida'>
             <h2 className="gradient">Exemplo</h2>
             <p>Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo</p>
+            <div className='status'>
+              <div className='status-respondido'>
+                <FontAwesomeIcon icon={faFaceSmile} className='feliz' />
+                <h3>Respondido</h3>
+              </div>
+              <div className="mostrar-resposta">
+                  <h4>Ver Resposta</h4>
+                  <FontAwesomeIcon icon={faCircleArrowDown} className="seta-baixo" />
+                </div>
+            </div>
           </div>
 
           <div className='duvida'>
             <h2 className="gradient">Exemplo</h2>
             <p>Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo Exemplo</p>
+            <div className='status'>
+              <div className='status-nao-respondido'>
+                <FontAwesomeIcon icon={faFaceSadTear} className='triste' />
+                <h3>Não Respondido</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
